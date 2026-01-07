@@ -121,7 +121,6 @@ higgs-boson-event-detection/
 ├── Dockerfile                # Docker container configuration
 └── README.md                 # Project documentation
 
----
 
 ## 📂 File Descriptions
 
