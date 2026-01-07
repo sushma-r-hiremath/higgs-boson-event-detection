@@ -237,7 +237,7 @@ Once deployed via Docker, the model can be queried using a REST API.
   "DER_mass_MMC": 125,
   "DER_pt_h": 45
 }
-
+```
 #### Example Request
 
 signal_probability : 0.23159195881853417
