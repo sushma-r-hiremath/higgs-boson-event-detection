@@ -121,8 +121,6 @@ higgs-boson-event-detection/
 ├── Dockerfile                # Docker container configuration
 └── README.md                 # Project documentation
 
-
-
 ---
 
 ## 📂 File Descriptions
@@ -149,8 +147,6 @@ higgs-boson-event-detection/
 - Builds a reproducible environment
 - Packages model and API
 - Exposes port 9696
-
----
 
 ---
 
