@@ -21,9 +21,23 @@ app = Flask(__name__)
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
-    df = pd.DataFrame([data])
+
+    # Load expected feature names from model
+    expected_features = model.feature_names_
+
+    # Create full input with defaults
+    input_data = {feature: 0.0 for feature in expected_features}
+
+    # Override with provided values
+    for key, value in data.items():
+        if key in input_data:
+            input_data[key] = value
+
+    df = pd.DataFrame([input_data])
     proba = model.predict_proba(df)[0, 1]
+
     return jsonify({"signal_probability": float(proba)})
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=9696)
