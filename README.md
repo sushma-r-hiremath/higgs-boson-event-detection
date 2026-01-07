@@ -241,3 +241,16 @@ Once deployed via Docker, the model can be queried using a REST API.
 #### Example Request
 
 signal_probability : 0.23159195881853417
+
+#### Note:
+The signal probability varies depending on how closely the input event
+resembles known Higgs-like patterns. Partial inputs are automatically
+handled by filling missing features with default values.
+
+#### Summary of Results:
+- Strong discriminative power (ROC-AUC ≈ 0.91)
+- Stable cross-validation performance
+- Physically interpretable feature importance
+- Robust inference API suitable for deployment
+
+These results demonstrate that the model is both accurate and practically usable in a real-world scientific ML pipeline.
