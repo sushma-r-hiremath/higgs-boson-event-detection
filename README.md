@@ -100,25 +100,27 @@ Missing values were handled using **median imputation**.
 
 ---
 
-## 🚀 Project Structure (DETAILED)
+## 📁 Project Structure (Detailed)
 
+```text
 higgs-boson-event-detection/
 │
 ├── data/
-│ └── training.csv
-│ └── README.md # Instructions to obtain dataset
+│   ├── training.csv          # Higgs Boson training dataset
+│   └── README.md             # Instructions to obtain the dataset
 │
 ├── model/
-│ └── catboost_model.cbm # Trained model artifact
+│   └── catboost_model.cbm    # Trained CatBoost model artifact
 │
 ├── src/
-│ ├── train.py # Model training script
-│ ├── predict.py # Flask API for inference
+│   ├── train.py              # Model training script
+│   └── predict.py            # Flask API for inference
 │
-├── notebook.ipynb # EDA + experimentation
-├── requirements.txt # Python dependencies
-├── Dockerfile # Containerization config
-└── README.md # Project documentation
+├── notebook.ipynb            # EDA and experimentation
+├── requirements.txt          # Python dependencies
+├── Dockerfile                # Docker container configuration
+└── README.md                 # Project documentation
+
 
 
 ---
