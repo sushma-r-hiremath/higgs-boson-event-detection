@@ -101,7 +101,7 @@ Missing values were handled using **median imputation**.
 ---
 
 ## 📁 Project Structure (Detailed)
-
+```text
 higgs-boson-event-detection/
 │
 ├── data/
@@ -119,7 +119,7 @@ higgs-boson-event-detection/
 ├── requirements.txt          # Python dependencies
 ├── Dockerfile                # Docker container configuration
 └── README.md                 # Project documentation
----
+```
 
 ## 📂 File Descriptions
 
